@@ -11,8 +11,8 @@ _**In this version of the app**_:
 
 _**To do**_:
 
-- Withdraw from exchange to external crypto address
-- Transfer between main account and sub account
+- Withdraw from exchange to external crypto address (client resource is ready however internal mapping not done)
+- Transfer between main account and sub account (client resource is ready however internal mapping not done)
 
 _**Imporvements that could be made**_
 
