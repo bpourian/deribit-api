@@ -20,6 +20,8 @@ public interface WalletResource {
   /**
    * Retrieve the latest users withdrawals
    *
+   * This defaults to 10 - interface can be changed to accept number of requested items
+   *
    * @param exchangeCurrency BTC, ETH ... required
    * @return WithdrawalList
    */
@@ -27,6 +29,8 @@ public interface WalletResource {
 
   /**
    * Retrieve the latest users withdrawals
+   *
+   * * This defaults to 10 - interface can be changed to accept number of requested items
    *
    * @param exchangeCurrency BTC, ETH ... required
    * @return WithdrawalList

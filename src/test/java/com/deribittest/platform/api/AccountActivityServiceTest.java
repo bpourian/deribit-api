@@ -10,7 +10,6 @@ import com.deribittest.platform.DeribitTestData;
 import com.deribittest.platform.api.mapper.AccountHolderMapper;
 import com.deribittest.platform.client.AccountManagementResource;
 import com.deribittest.platform.model.AccountType;
-import com.deribittest.platform.model.Accounts;
 import com.deribittest.platform.model.ExchangeCurrency;
 import com.deribittest.platform.persistence.AccountSummaryPersistenceService;
 import java.util.List;
@@ -59,7 +58,7 @@ class AccountActivityServiceTest {
         .thenReturn(List.of(DeribitTestData.anAccount(ExchangeCurrency.BTC, AccountType.MAIN)));
 
     // when
-    Accounts actual = underTest.getAccountsForUser(email);
+    underTest.getAccountsForUser(email);
 
     // then
     verify(accountSummaryPersistenceService, only()).selectAccountWithEmail(email);
