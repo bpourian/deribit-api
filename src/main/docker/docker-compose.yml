@@ -6,6 +6,8 @@ services:
     build:
       context: .
     container_name: platform
+    ports:
+      - "8080:8080"
     depends_on:
       - db
     environment:
@@ -13,6 +15,8 @@ services:
       - SPRING_DATASOURCE_USERNAME=postgres
       - SPRING_DATASOURCE_PASSWORD=test
       - SPRING_JPA_HIBERNATE_DDL_AUTO=none
+      - DERIBIT_CLIENT_ID=6rEBOBDR
+      - DERIBIT_CLIENT_SECRET=PnzxVerfYidsCFdCe1oR_5qMxAYKRVn0VIqWMfKiiiQ
 
   db:
     image: 'postgres:13.1-alpine'
@@ -20,3 +24,5 @@ services:
     environment:
       - POSTGRES_USER=postgres
       - POSTGRES_PASSWORD=test
+    expose:
+      - "5432"
