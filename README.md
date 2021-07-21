@@ -29,8 +29,7 @@ _**Load the app**_
 
 _*Docker*_
 
-I have included a ready .jar file in the docker directory `src/main/docker`. I appreciate this is a
-point for argument but I wanted to provide an ease of use of the app.
+Once you have cloned the repo cd into `deribit-api` directory then,
 
 To begin:
 
@@ -73,4 +72,3 @@ _**Using the app**_
 * Call local db to retrieve account balance information (user email address)
 
 `curl localhost:8080/account/user/{emailAddress} | json_pp`
-
